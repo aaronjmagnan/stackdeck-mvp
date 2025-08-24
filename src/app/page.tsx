@@ -18,18 +18,21 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
+            {/* ✅ Now just a link to /signin */}
             <a
-              href="#"
+              href="/signin"
               className="rounded-xl border border-gray-900 px-4 py-2 text-sm font-medium hover:bg-gray-900 hover:text-white transition"
             >
               Sign in (magic link)
             </a>
+
             <a
               href="/u/demo-user"
               className="rounded-xl border px-4 py-2 text-sm font-medium hover:bg-gray-50 transition"
             >
               View example profile
             </a>
+
             <a
               href="/dashboard"
               className="rounded-xl px-4 py-2 text-sm font-medium underline underline-offset-4"
