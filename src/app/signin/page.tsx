@@ -23,6 +23,7 @@ export default function SignInPage() {
       }
       setStatus("sent");
     } catch (err: any) {
+      const e = err as Error;
       setError(err.message || "Something went wrong");
       setStatus("error");
     }

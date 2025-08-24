@@ -1,4 +1,3 @@
-import Link from "next/link";
 export default function DashboardPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
