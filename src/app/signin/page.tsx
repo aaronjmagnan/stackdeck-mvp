@@ -22,7 +22,7 @@ export default function SignInPage() {
         throw new Error(data?.error || "Failed to send link");
       }
       setStatus("sent");
-    } catch (err: any) {
+    } catch (err: unknown) {
       const e = err as Error;
       setError(err.message || "Something went wrong");
       setStatus("error");
