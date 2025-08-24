@@ -24,7 +24,7 @@ export default function SignInPage() {
       setStatus("sent");
     } catch (err: unknown) {
       const e = err as Error;
-      setError(err.message || "Something went wrong");
+      setError(e.message || "Something went wrong");
       setStatus("error");
     }
   }
